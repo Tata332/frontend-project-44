@@ -1,4 +1,0 @@
-#!/frontend-project-44/bin/brain-games.js node
-import greetings from '../src/cli.js';
-console.log('Welcome to the Brain Games!');
-cli();
