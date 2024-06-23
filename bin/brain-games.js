@@ -6,4 +6,4 @@ const greetingUser = () => {
     playerName();
 };
 
-greetingUser ();
+greetingUser();
