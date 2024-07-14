@@ -1,4 +1,8 @@
-#! /usr/bin/env node
-import runEven from '../src/games/even.js';
+import playerName from '../src/gemeEven.js';
 
-runEven();
+const greeting = () => {
+    console.log('Welcome to the Brain Games!');
+    userName();
+};
+
+greeting();
