@@ -1,8 +1,3 @@
-import playerName from '../src/gemeEven.js';
+import startBrainEven from '../src/games/even.js';
 
-const greeting = () => {
-    console.log('Welcome to the Brain Games!');
-    playerName();
-};
-
-greeting();
+startBrainEven();

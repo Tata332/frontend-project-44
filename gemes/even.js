@@ -1,15 +1,16 @@
-import gameEngine from '../gameEven.js';
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
+import runGame from '../gemeEvens.js';
 
-const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = (number) => number % 2 === 0;
 
-const isEven = (num) => num % 2 === 0;
-const getQuestionAndAnswer = () => {
-  const question = getRandomNumber(0, 100);
-  const answer = isEven(question) ? 'yes' : 'no';
-  return [question, answer];
+const description = 'Answer "yes" if given number is even. Otherwise answer "no".';
+const generateRound = () => {
+  const number = getRandomNumber(0, 25);
+  const question = String(number);
+  const answer = isEven(number) ? 'yes' : 'no';
+  return [question, String(answer)];
 };
 
-export default () => {
-  gameEngine(rule, getQuestionAndAnswer);
-};
+const startBrainEven = () => runGame(description, generateRound);
+
+export default startBrainEven;
