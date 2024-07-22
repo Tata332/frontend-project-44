@@ -1,4 +1,4 @@
-import gameEngine from '../src/gemeEven.js';
+import gameEngine from '../src/index.js';
 import { getRandomNumber, randomEquasion } from '../src/utils.js';
 
 const rule = 'What is the result of the expression?';

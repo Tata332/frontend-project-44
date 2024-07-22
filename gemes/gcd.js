@@ -1,4 +1,4 @@
-import gameEngine from '../src/gemeEven.js';
+import gameEngine from '../src/index.js';
 import { getRandomNumber} from '../src/utils.js';
 
 
