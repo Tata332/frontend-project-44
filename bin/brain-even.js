@@ -1,3 +1,3 @@
-import {startBrainEven} from '../src/games/even.js';
+import  getNotfgot from '../gemes/even.js';
 
-startBrainEven();
+getNotfgot();
