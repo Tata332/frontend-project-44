@@ -1,3 +1,3 @@
-import  getNotfgot from '../gemes/even.js';
+import  runEven from '../gemes/even.js';
 
-getNotfgot();
+runEven();
