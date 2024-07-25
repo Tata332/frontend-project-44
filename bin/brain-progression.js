@@ -1,3 +1,3 @@
-import runProgression from '../gemes/progression.js';
+import runProgression from '../src/games/progression.js';
 
 runProgression ();
