@@ -1,10 +1,10 @@
 import gameEngine from '../index.js';
-import { getRandomNumber, randomEquasion } from '../utils.js';
+import { getRandomNumber, getRandomOperator } from '../utils.js';
 
 const rule = 'What is the result of the expression?';
 
 const getQuestionAndAnswer = () => {
-    const equasion = randomEquasion(getRandomNumber(0, 100), getRandomNumber(0, 100));
+    const equasion = getRandomOperator(getRandomNumber(0, 100), getRandomNumber(0, 100));
     return [equasion.equasion, equasion.result];
 };
 

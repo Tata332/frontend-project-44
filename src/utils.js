@@ -3,9 +3,9 @@ const getRandomNumber = (min, max) => {
     return number;
   };
   
-  const randomEquasion = (num1, num2) => {
-    const arrayOfSymbols = ['+', '-', '*'];
-    const randomSymbol = arrayOfSymbols[Math.floor(Math.random() * arrayOfSymbols.length)];
+  const getRandomOperator = (num1, num2) => {
+    const operators = ['+', '-', '*'];
+    const randomSymbol = operators[Math.floor(Math.random() * operators.length)];
     if (randomSymbol === '+') {
       return {
         equasion: `${num1} + ${num2}`,
@@ -23,4 +23,4 @@ const getRandomNumber = (min, max) => {
     };
   };
   
-  export { getRandomNumber, randomEquasion };
+  export { getRandomNumber, getRandomOperator };
