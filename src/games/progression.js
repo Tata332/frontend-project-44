@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import getEngine from '../index.js';
 import { getRandomNumber} from '../utils.js';
 
 const rule = 'What number is missing in the progression?';
@@ -29,4 +29,4 @@ const getProgression = (startProgression, stepProgression) => {
     return [question, answer];
   };
   
-  export default () => gameEngine(rule, getQuestionAndAnswer);
+  export default () => getEngine(rule, getQuestionAndAnswer);

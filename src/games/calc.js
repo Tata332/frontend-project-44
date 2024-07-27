@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import getEngine from '../index.js';
 import { getRandomNumber, getRandomOperator } from '../utils.js';
 
 const rule = 'What is the result of the expression?';
@@ -9,5 +9,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-    gameEngine(rule, getQuestionAndAnswer);
+    getEngine(rule, getQuestionAndAnswer);
 };

@@ -1,4 +1,4 @@
-import gameEngine from '../index.js';
+import getEngine from '../index.js';
 import { getRandomNumber} from '../utils.js';
 
 
@@ -21,5 +21,5 @@ const answerGcd = (num1, num2) => {
   };
   
   export default () => {
-    gameEngine(rule, getQuestionAndAnswer);
+    getEngine(rule, getQuestionAndAnswer);
   };
