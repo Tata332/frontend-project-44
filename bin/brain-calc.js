@@ -1,3 +1,3 @@
-import runCalc from '../src/games/calc.js';
+import runCalc from '../games/calc.js';
 
 runCalc ();

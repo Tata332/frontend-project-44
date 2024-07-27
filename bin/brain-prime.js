@@ -1,3 +1,3 @@
-import runPrimer from '../src/games/prime.js';
+import runPrimer from '../games/prime.js';
 
 runPrimer ();

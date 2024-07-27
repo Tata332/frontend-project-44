@@ -1,5 +1,5 @@
-import getEngine from '../index.js';
-import { getRandomNumber, getRandomOperator } from '../utils.js';
+import getEngine from '../src/index.js';
+import { getRandomNumber, getRandomOperator } from '../src/utils.js';
 
 const rule = 'What is the result of the expression?';
 

@@ -1,3 +1,3 @@
-import  getNotfgot  from '../src/games/even.js';
+import  getNotfgot  from '../games/even.js';
 
 getNotfgot ();
