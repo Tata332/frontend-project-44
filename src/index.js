@@ -12,7 +12,6 @@ export default (rule, getQuestionAndAnswer) => {
     console.log('Welcome to the Brain Games!');
     const userName = greeting();
     console.log(rule);
-
     let round = 0;
 
   while (round < roundsCount) {
@@ -21,7 +20,7 @@ export default (rule, getQuestionAndAnswer) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (correctAnswer !== userAnswer) {
-        console.log(`"${userAnswer}" is a wrong answer.\nCorrect answer was ;(. "${correctAnswer}".`);
+        console.log(`"${userAnswer}" is a wrong answer.\nCorrect answer was "${correctAnswer}".`);
         console.log(`Let's try again, ${userName}!`);
         return;
     }

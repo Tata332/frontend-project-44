@@ -10,4 +10,4 @@ const getQuestionAndAnswer = () => {
 
 export default () => {
     getEngine(rule, getQuestionAndAnswer);
-};
+};;
