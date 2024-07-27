@@ -19,5 +19,5 @@ const answerGcd = (num1, num2) => {
   };
   
   export default () => {
-    gameEngine(rule, getQuestionAndAnswer);
+    getEngine(rule, getQuestionAndAnswer);
   };
