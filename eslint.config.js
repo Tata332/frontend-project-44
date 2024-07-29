@@ -27,9 +27,9 @@ export default [
         sourceType: 'module',
       },
     },
-    plugins: { import: importPlugin },
+
     rule: {
-      ...importPlugin.configs.recommended.rules,
+      ...configs.recommended.rules,
     },
   },
   ...compat.extends('airbnb-base'),
