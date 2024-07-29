@@ -28,9 +28,6 @@ export default [
       },
     },
 
-    rule: {
-      ...recommended.rules,
-    },
   },
   ...compat.extends('airbnb-base'),
   {
