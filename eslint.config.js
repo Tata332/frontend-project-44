@@ -27,5 +27,30 @@ export default [
         sourceType: 'module',
       },
     },
+    plugins: { import: importPlugin },
+    rule: {
+      ...importPlugin.configs.recommended.rules,
+    },
+  },
+  ...compat.extends('airbnb-base'),
+  {
+    rule: {
+      'no-underscore-dangle': [
+        'error',
+        {
+          allow: ['__filename', '__dirname'],
+        },
+      ],
+      'import/extensions': [
+        'error',
+        {
+          js: 'always',
+        },
+      ],
+      'import/no-named-as-default': 'off',
+      'import/no-named-as-default-member': 'off',
+      'no-console': 'off',
+      'import/no-extraneous-dependencies': 'off',
+    },
   },
 ];
