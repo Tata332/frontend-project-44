@@ -1,7 +1,7 @@
 import getEngine from '../index.js';
-import { getRandomNumber} from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
-const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -14,7 +14,7 @@ const isPrime = (num) => {
     }
     i += 1;
   }
-    return true;
+  return true;
 };
 
 const getQuestionAndAnswer = () => {

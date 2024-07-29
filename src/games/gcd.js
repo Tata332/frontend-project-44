@@ -9,7 +9,7 @@ const answerGcd = (num1, num2) => {
   }
   return answerGcd(num2, num1 % num2);
 };
-  
+
 const getQuestionAndAnswer = () => {
   const question = [getRandomNumber(0, 100), getRandomNumber(0, 100)];
   const answer = answerGcd(...question).toString();
