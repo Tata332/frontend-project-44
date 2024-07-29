@@ -29,7 +29,7 @@ export default [
     },
 
     rule: {
-      ...configs.recommended.rules,
+      ...recommended.rules,
     },
   },
   ...compat.extends('airbnb-base'),
