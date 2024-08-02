@@ -3,4 +3,4 @@ const getRandomNumber = (min, max) => {
   return number;
 };
 
-export {getRandomNumber};
+export default getRandomNumber;
