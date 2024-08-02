@@ -8,15 +8,15 @@ const greeting = () => {
   return userName;
 };
 
-export default (rule, getQuestionAndAnswer) => {
+export default (rule, round) => {
   console.log('Welcome to the Brain Games!');
   const userName = greeting();
   console.log(rule);
 
-  let round = 0;
+  let i = 0;
 
-  while (round < roundsCount) {
-    const [question, correctAnswer] = getQuestionAndAnswer();
+  while (i < roundsCount) {
+    const [question, correctAnswer] = round();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -27,7 +27,7 @@ export default (rule, getQuestionAndAnswer) => {
     }
 
     console.log('Correct!');
-    round += 1;
+    i += 1;
   }
   console.log(`Congratulations, ${userName}!`);
 };
