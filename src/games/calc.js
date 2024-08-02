@@ -27,7 +27,7 @@ const calculate = (num1, num2) => {
 const getQuestionAndAnswer = () => {
   const equasion = calculate(getRandomNumber(0, 100), getRandomNumber(0, 100));
   return [equasion.equasion, equasion.result];
-}
+};
 
 export default () => {
   getEngine(rule, getQuestionAndAnswer);
