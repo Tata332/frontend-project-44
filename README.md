@@ -14,16 +14,27 @@
 - Определение наибольшего общего делителя.
 - Определение простого числа.
 
-## Поприветствуйте 
+## Приветствие
+
+Поприветствует пользователя в игре. Спросите у пользователя его имя и поприветствуйте его по имени.
+
+#### Запуск
 
 ```
-### brain-games
+$ brain-games
 ```
-
+#### Пример
 [![asciicast](https://asciinema.org/a/aM791sNjimNpJT6f12B9bae11.svg)](https://asciinema.org/a/aM791sNjimNpJT6f12B9bae11)
 
-## brain-even
+## Калькулятор
 
+Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+
+#### Запуск игры
+```
+$ brain-even
+```
+#### Пример игры
 [![asciicast](https://asciinema.org/a/2QhtvbasoRtkN3BucaVtQSwYT.svg)](https://asciinema.org/a/2QhtvbasoRtkN3BucaVtQSwYT)
 
 ## brain-calc
