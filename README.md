@@ -26,9 +26,9 @@ $ brain-games
 #### Пример
 [![asciicast](https://asciinema.org/a/aM791sNjimNpJT6f12B9bae11.svg)](https://asciinema.org/a/aM791sNjimNpJT6f12B9bae11)
 
-## Калькулятор
+## Проверка на чётность
 
-Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.
 
 #### Запуск игры
 ```
@@ -37,18 +37,46 @@ $ brain-even
 #### Пример игры
 [![asciicast](https://asciinema.org/a/2QhtvbasoRtkN3BucaVtQSwYT.svg)](https://asciinema.org/a/2QhtvbasoRtkN3BucaVtQSwYT)
 
-## brain-calc
+## Игра: "Калькулятор"
 
+Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+
+#### Запуск игры
+```
+$ brain-calc
+```
+#### Пример игры
 [![asciicast](https://asciinema.org/a/5mS4UlX3pljlIXPaxFRLlJ7F1.svg)](https://asciinema.org/a/5mS4UlX3pljlIXPaxFRLlJ7F1)
 
-## brain-gcd
+## Игра: "НОД"
 
+Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+
+#### Запуск игры
+```
+$ brain-gcd
+```
+#### Пример игры
 [![asciicast](https://asciinema.org/a/xGMLtgXnUYHz9y6OKPT8uj7Ae.svg)](https://asciinema.org/a/xGMLtgXnUYHz9y6OKPT8uj7Ae)
 
-## brain-prime
+## Игра: "Простое ли число?"
 
+Суть игры в следующем: пользователю показывается случайное число. Ему нужно ответить yes, если число простое, или no — если нет.
+
+#### Запуск игры
+```
+$ brain-prime
+```
+#### Пример игры
 [![asciicast](https://asciinema.org/a/Eh5Duuy5kBKllwPE1ovXaLXLc.svg)](https://asciinema.org/a/Eh5Duuy5kBKllwPE1ovXaLXLc)
 
-## brain-progression
+## Игра: "Арифметическая прогрессия"
 
+ Суть игры в следующем: показываем игроку ряд чисел, образующий арифметическую прогрессию. Игрок должен определить это число.
+
+#### Запуск игры
+```
+$ brain-progression
+```
+#### Пример игры
 [![asciicast](https://asciinema.org/a/1bFZ6fdSxB0u4KDJWoJqzScL7.svg)](https://asciinema.org/a/1bFZ6fdSxB0u4KDJWoJqzScL7)
