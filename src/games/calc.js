@@ -1,10 +1,11 @@
 import getEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const operators = ['+', '-', '*'];
+
 const rule = 'What is the result of the expression?';
 
 const calculate = (num1, num2) => {
-  const operators = ['+', '-', '*'];
   const randomSymbol = operators[Math.floor(Math.random() * operators.length)];
   if (randomSymbol === '+') {
     return {
