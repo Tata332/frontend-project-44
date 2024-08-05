@@ -11,7 +11,7 @@ const getProgression = (startProgression, step, progressionLength) => {
   return progression;
 };
 
-const getQuestionAndAnswer  = () => {
+const getQuestionAndAnswer = () => {
   const startProgression = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const progressionLength = getRandomNumber(5, 10);
