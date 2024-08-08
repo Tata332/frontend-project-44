@@ -5,29 +5,27 @@ const operators = ['+', '-', '*'];
 
 const rule = 'What is the result of the expression?';
 
-const calculate = (num1, num2) => {
-  const symbol = operators[getRandomNumber(0, operators.length - 1)];
-  if (symbol === '+') {
-    return {
-      equasion: `${num1} + ${num2}`,
-      result: `${num1 + num2}`,
-    };
+const getCalcOperator = (firstNumber, secondNumber, operator) => {
+  switch (operator) {
+      case '+':
+        return firstNumber + secondNumber;
+      case '-':
+        return firstNumber - secondNumber;
+      case '*':
+        return firstNumber * secondNumber;
+      default:
+        return null;
   }
-  if (symbol === '-') {
-    return {
-      equasion: `${num1} - ${num2}`,
-      result: `${num1 - num2}`,
-    };
-  }
-  return {
-    equasion: `${num1} * ${num2}`,
-    result: `${num1 * num2}`,
-  };
+
 };
 
 const getRound = () => {
-  const equasion = calculate(getRandomNumber(0, 100), getRandomNumber(0, 100));
-  return [equasion.equasion, equasion.result];
+  const firstNumber = getRandomNumber(0, 100);
+  const secondNumber = getRandomNumber(0, 100);
+  const operator = operators[getRandomNumber(0, 2)];
+  const question = `${firstNumber} ${operator} ${secondNumber}`;
+  const answer = getCalcOperator(firstNumber, secondNumber, operator);
+  return [question, String(answer)];
 };
 
 export default () => {
