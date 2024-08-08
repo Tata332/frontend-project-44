@@ -11,7 +11,7 @@ const getProgression = (startProgression, step, progressionLength) => {
   return progression;
 };
 
-const getQuestionAndAnswer = () => {
+const getRound = () => {
   const startProgression = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const progressionLength = getRandomNumber(5, 10);
@@ -23,4 +23,4 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-export default () => getEngine(rule, getQuestionAndAnswer);
+export default () => getEngine(rule, getRound);

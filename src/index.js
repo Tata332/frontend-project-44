@@ -8,7 +8,7 @@ const greeting = () => {
   return userName;
 };
 
-export default (rule, round) => {
+export default (rule, getRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = greeting();
   console.log(rule);
@@ -16,7 +16,7 @@ export default (rule, round) => {
   let i = 0;
 
   while (i < roundsCount) {
-    const [question, correctAnswer] = round();
+    const [question, correctAnswer] = getRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 

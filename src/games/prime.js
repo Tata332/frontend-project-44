@@ -17,10 +17,10 @@ const isPrime = (num) => {
   return true;
 };
 
-const getQuestionAndAnswer = () => {
+const getRound = () => {
   const question = getRandomNumber(0, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
-export default () => getEngine(rule, getQuestionAndAnswer);
+export default () => getEngine(rule, getRound);
