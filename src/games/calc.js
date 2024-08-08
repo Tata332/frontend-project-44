@@ -7,14 +7,14 @@ const rule = 'What is the result of the expression?';
 
 const getCalcOperator = (firstNumber, secondNumber, operator) => {
   switch (operator) {
-      case '+':
-        return firstNumber + secondNumber;
-      case '-':
-        return firstNumber - secondNumber;
-      case '*':
-        return firstNumber * secondNumber;
-      default:
-        return null;
+    case '+':
+      return firstNumber + secondNumber;
+    case '-':
+      return firstNumber - secondNumber;
+    case '*':
+      return firstNumber * secondNumber;
+    default:
+      return null;
   }
 
 };
