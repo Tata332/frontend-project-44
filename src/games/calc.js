@@ -5,25 +5,25 @@ const operators = ['+', '-', '*'];
 
 const rule = 'What is the result of the expression?';
 
-const getCalcOperator = (firstNumber, secondNumber, operator) => {
+const calculate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
-      return firstNumber + secondNumber;
+      return number1 + number2;
     case '-':
-      return firstNumber - secondNumber;
+      return number1 - number2;
     case '*':
-      return firstNumber * secondNumber;
+      return number1 * number2;
     default:
-      return null;
+      throw new Error('Error');
   }
 };
 
 const getRound = () => {
-  const firstNumber = getRandomNumber(0, 100);
-  const secondNumber = getRandomNumber(0, 100);
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
   const operator = operators[getRandomNumber(0, 2)];
-  const question = `${firstNumber} ${operator} ${secondNumber}`;
-  const answer = getCalcOperator(firstNumber, secondNumber, operator);
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = calculate(number1, number2, operator);
   return [question, String(answer)];
 };
 
