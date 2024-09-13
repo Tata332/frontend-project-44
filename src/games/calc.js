@@ -15,7 +15,7 @@ const getCalcOperator = (firstNumber, secondNumber, operator) => {
       return firstNumber * secondNumber;
     default:
       return null;
-  }
+  } 
 };
 
 const getRound = () => {
