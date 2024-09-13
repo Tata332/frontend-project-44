@@ -14,7 +14,7 @@ const getCalcOperator = (firstNumber, secondNumber, operator) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return null;
+      throw new Error('Errorss');
   }
 };
 
