@@ -16,7 +16,7 @@ const getRound = () => {
   const step = getRandomNumber(1, 10);
   const length = getRandomNumber(5, 10);
   const progression = getProgression(start, step, length);
-  const missingNumber = getRandomNumber(1, progression.length);
+  const missingNumber = getRandomNumber(0, progression.length - 1);
   const answer = String(progression[missingNumber]);
   progression[missingNumber] = '..';
   const question = progression.join(' ');
